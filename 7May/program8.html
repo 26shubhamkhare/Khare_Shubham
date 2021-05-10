@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM 8_DIV</title>
+    <style>
+        #d1 {
+            height: 9vh;
+            width: 110%;
+            border: 2px solid red;
+            background-image: url("lapy.jpg");
+            background-size: 600px 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 align=center>
+            Welcome to the Document Library
+            <hr>
+            <marquee behavior="scroll" direction="right" scrollamount=12>Access the Programs of your choice!!!</marquee>
+            <hr>
+        </h1>
+    </div>
+    <div id="d1">
+        <h1>
+            <font color="black">RESUME</font>
+        </h1>
+        <p>To Access your Resume please enter your Details</p>
+
+        <form action="send.php" method="post">
+
+            <center>
+                <table>
+                    <tr>
+                        <td>Enter Your Name <font color=red>*</font>
+                        </td>
+                        <td>
+                            <input type="text" name="fname" required="" autofocus="" pattern="[a-zA-Z]{2,50}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your Email Address</td>
+                        <td>
+                            <input type="email" name="emailAddress" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Your password</td>
+                        <td>
+                            <input type="password" name="pwd">
+                        </td>
+                    </tr>
+                </table>
+        </form>
+        <a href="resume.html">Submit</a>
+        <hr>
+    </div>
+
+</body>
+
+</html>
